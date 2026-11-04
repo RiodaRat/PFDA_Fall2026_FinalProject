@@ -55,7 +55,7 @@ Ideal Outcome:
 - Briefly describe what is the ideal outcome?
 - the ideal outcome would be a simple dungeon crawler that is endless and fun for the player to pass time and allows you to expirement with certain classes, interactions, etc. 
 
-##Minimal Viable Outcome:
+## Minimal Viable Outcome:
 - Briefly describe the bare essential for a good working outcome?
 - a functioning dungeon crawler that gives a player a set of stats, creates a randomly generated map hidden from the player, lets the player explore the dungeon without going out of bounds, gives the player random
 - encounters for each room, and allows the player to fight a final boss at the end of the dungeon. 

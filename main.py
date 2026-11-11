@@ -1,5 +1,7 @@
 import random
 
+#this is where I will be prototyping my code up until the final version
+
 class Player: #player class and stats
 
     def __init__(self, name):

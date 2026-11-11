@@ -48,11 +48,12 @@ def play_game(): #function to play the game
     print(f"\nWelcome {player.name}! Your Journey begins as you step past the dungeon gates . . . ")
 
     #main game loop
-    while player.is_alive(True):
+    while player.is_alive():
         print(f"\n-------------------------------------")
-        print(f"Current Position: {player.pos} | HP: {player.hp}/{player.max_hp} | Gold: {player.gold}")
-
+        print(f"Current Position: {player_pos} | HP: {player.hp}/{player.max_hp} | Gold: {player.gold}")
+        print(f"-------------------------------------")
         #movement
+        print("\n")
         move = input("Move [W: Up, S: Down, D: Right, A: Left] or [Q: Quit]: ").lower()
 
         if move == 'q':
@@ -86,50 +87,50 @@ def play_game(): #function to play the game
             print(f"\n[Exploring new territory at {player_pos}]")
 
             if event == "monster":
-                print(f"\n A wild Goblin Jumps out at you and challenges you to a fight!")
+                print(f"\nA wild Goblin Jumps out at you and challenges you to a fight!")
                 enemy = Goblin()
 
                 #combat loop
-                while enemy.is_alive(True) and player.is_alive(True):
+                while enemy.is_alive() and player.is_alive():
                     action = input("Combat actions --> [A] to attack or [R] to run: ").lower()
 
                     if action == 'a': #player attacks enemy 
                         damage_to_enemy = max(1, player.attack - enemy.defense)
                         enemy.hp -= damage_to_enemy
-                        print(f" You strike the Goblin for {damage_to_enemy} damage! The Goblin has ({max(0, enemy.hp)} HP left)")
+                        print(f"\nYou strike the Goblin for {damage_to_enemy} damage! The Goblin has ({max(0, enemy.hp)} HP left)")
 
-                        if enemy.is_alive(True): #enemy counter attacks if still alive
+                        if enemy.is_alive(): #enemy counter attacks if still alive
                             damage_to_player = max(1, enemy.attack - player.defense)
                             player.hp -= damage_to_player
-                            print(f" The Goblin slashes back for {damage_to_player} damage! Your HP is now: {max(0, player.hp)})")
+                            print(f"\nThe Goblin slashes back for {damage_to_player} damage! Your HP is now: {max(0, player.hp)})")
 
                     elif action == 'r':
-                        print("You managed to scramble away from the fight!")
+                        print("\nYou managed to scramble away from the fight!")
                         break
 
                     else:
                         print("INVALID OPTION!! ")
 
-                if enemy.is_alive(False):
-                    print("\n Victory! You defeated the Goblin and looted 20 gold. ")
+                if not enemy.is_alive():
+                    print("\nVictory! You defeated the Goblin and looted 20 gold. ")
                     player.gold += 20
 
             elif event == "treasure":
-                print("you stumble upon a treasure chest and gain 30 gold. ")
+                print("\nYou stumble upon a treasure chest and gain 30 gold. ")
                 player.gold += 30
 
             else:
-                print("The room is Quiet and empty, perfect place to catch your breath. ")
+                print("\nThe room is Quiet and empty, perfect place to catch your breath. ")
 
         else:
-            print(f"\n You step into a familiar room you have been in already. ")
+            print(f"\nYou step into a familiar room you have been in already. ")
 
     #end game check
-    if player.is_alive(False):
-        print("\n GAME OVER! You died in the dungeon . . . ")
+    if not player.is_alive():
+        print("\nGAME OVER! You died in the dungeon . . . ")
 
     else:
-        print(f"\n the Game closed and you finished with {player.gold} gold. ")
+        print(f"\nThe Game closed and you finished with {player.gold} gold. ")
 
 if __name__ == "__main__":
     play_game()

@@ -1,18 +1,10 @@
-everything for porposal file here
-
-# PFDA_Fall2026_FinalProject
-my repository for my final project for my PFDA class of fall 2026
-
-# Title
-Dungeon Crawler
+# Dungeon Crawler
 
 ## Repository
-<Link to your project's public GitHub respository>
 link to repository [Hopefully this link works]([url](https://github.com/RiodaRat/PFDA_Fall2026_FinalProject))
 
 
 ### Description
-1-2 sentence description of what it will do and how it relevant to media and digital arts.
 this game is a dungeon crawler which will allow the player to choose a class from a given set and then set out into a dungeon, 
 revealing random encounters in rooms as they progress and also have the player be given certain actions to inspect, attack, defend, heal, etc. 
 
@@ -30,23 +22,17 @@ why this is relevant because it will give me and my peers a baseline of knowledg
     - after inputting one of these keys, either a new room will appear before the player, or the player will run into a wall saying that there is no room in this direction
     - the reason for this is because the player cant see the map of the dungeon so if the player goes into a room that's part of the map, the room will be revealed, if not, the player runs into a wall
     - the random encounters could be shopkeeps, monsters, random chests, or the final boss encounter which only happens after a set number of encounters and upon defeating the boss, stairs will appear to provide 	- the player access to the next level of the dungeon
-- Feature N: player choice / inventory / class stats / and leveling or upgrades
+- Feature 3: player choice / inventory / class stats / and leveling or upgrades
 	- Short explaination of how it will be executed.
   	- when the player selects a class at the beginning, they will be given a set number of stats such as attack, magic, defense, health, money, and inventory
   	- each class for the player will most likely be a class of their own and fit into a list for when the player chooses, the players stats will be given the stats of that class
   	- each stat will also somewhat affect how you fight monsters and other encounters in the dungeon
 
 ### Challenges
-- Short sentence of any skill or topic that needs to be learnt or researched.
-
 - I will need to look back at the previous labs on how to do randomization as well as making classes for certain objects such as the monsters, shopkeepers, the individual player classes, etc. 
-
-- Short sentence of any skill or topic that needs to be learnt or researched.
 
 - I will also need to go indepth about how to display certain objects or create graphics out of text kind of like the cowsay library but more geared towards dungeon crawlers so that whay i can display information
 - to the player in a way thats better than just a text block
-
-- Short sentence of any skill or topic that needs to be learnt or researched.
 
 - I will also need to look back at lists, dictionaries, and more ways to handle code so that it doesn't become so overwhelming and i can better optimize certain things
 
@@ -62,14 +48,14 @@ Ideal Outcome:
 
 # Milestones
 
-- Week 1 planning everything out and getting as much done as possible
-  1. Goal 1 ( should hopefully get a rough functioning prototype done this week )
-  2. Goal 2 ( should get at least the bare minimum for sprites and graphics to show the player, player icon, monster icon, boss icon, rooms, etc. )
+- Week 1 getting started and getting a functional prototype
+  1. Goal 1 ( get a functional prototype done )
+  2. Goal 2 ( expand on the functional prototype )
 
 - Week 2 get as much done as possible 
-  1. Goal 1 ( add more functionality to get closer to the bare minimum for the Minimal viable outcome )
-  2. Goal 2 ( refine the prototype to get it so that everything works for the bare minimum part of the project )
+  1. Goal 1 ( have most of the functionality done and completed )
+  2. Goal 2 ( refine the prototype to get it ready for final details )
 
 - Week N (Final) finish the project
-  1. Goal 1 (add the final functionality and pieces to go further than the minimal viable outcome)
-  2. Goal 2 (playtest to make sure it works, refine it so it looks good, make sure everythings ok and then turn it in )
+  1. Goal 1 ( add final functionality and details )
+  2. Goal 2 ( turn project in )
